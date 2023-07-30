@@ -1,0 +1,189 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Common CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: url(../IMG/bg.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 40px;
+}
+
+header h1 {
+    font-size: 33px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Nav Section */
+nav {
+    margin-right: 33px;
+}
+
+nav a {
+    margin: 25px 25px 0px 0px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #B53471;
+    transition: all ease 0.5s;
+}
+
+.loginBtn {
+    padding: 7px 38px;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.loginBtn:hover {
+    background: #fff;
+    transition: all ease 0.7s;
+    color: black;
+}
+
+/* Login Form */
+
+.closeIcon {
+    color: white;
+    height: 50px;
+    border-radius: 6px 13px 0px 27px;
+    right: 0;
+    top: 0;
+    background: black;
+    font-size: 40px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#wrapper {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox {
+    position: relative;
+    width: 100%;
+    max-width: 355px;
+    height: 450px;
+    backdrop-filter: blur(1rem);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logIn {
+    display: none;
+}
+
+.signUp {
+    display: none;
+}
+
+.loginLogo {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.inputBox input {
+    width: 100%;
+    height: 35px;
+    position: relative;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 33px;
+}
+
+.inputBox #password {
+    margin-bottom: 8px;
+}
+
+.inputBox label {
+    position: relative;
+    bottom: 34px;
+    cursor: none;
+}
+
+.inputBox input::placeholder {
+    font-size: 16px;
+    color: black;
+}
+
+.icon {
+    position: absolute;
+    right: 50px;
+    z-index: 99;
+    font-weight: bold;
+}
+
+.checkBox {
+    margin-bottom: 20px;
+}
+
+.checkBox label {
+    font-size: 14px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.checkBox span {
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 8px;
+    background: black;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+}
+
+.formloginBtn p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.formloginBtn span a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}

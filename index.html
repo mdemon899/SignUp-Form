@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo">Logo</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="loginBtn">Login</button>
+        </nav>
+    </header>
+
+
+    <div id="wrapper">
+        <div class="formBox logIn">
+            <span class="closeIcon">
+                <ion-icon name="close-outline"></ion-icon>
+            </span>
+
+            <h2 class="loginLogo">Login</h2>
+            <form action="#">
+                <div class="inputBox">
+                    <span class="icon">
+                        <ion-icon name="mail-unread"></ion-icon>
+                    </span>
+                    <input type="email" id="email" required placeholder="Email">
+                </div>
+
+                <div class="inputBox">
+                    <span class="icon">
+                        <ion-icon name="lock-open"></ion-icon>
+                    </span>
+                    <input type="password" id="password" required placeholder="Password">
+                </div>
+                <div class="checkBox">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Remember Me</label>
+                    <span><a href="#" style="text-decoration: none; color: #000;">Forgot Password</a></span>
+                </div>
+                <div class="formloginBtn">
+                    <button class="btn">Login</button>
+                    <p>Don't have an account? <span class="registerBtn"><a href="#">Register</a></span></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="formBox signUp">
+            <span class="closeIcon closeIconSignUp">
+                <ion-icon name="close-outline"></ion-icon>
+            </span>
+
+            <h2 class="loginLogo">SignUp</h2>
+            <form action="#">
+                <div class="inputBox">
+                    <span class="icon">
+                        <ion-icon name="person-sharp"></ion-icon>
+                    </span>
+                    <input type="userName" id="userName" required placeholder="Username">
+                </div>
+
+                <div class="inputBox">
+                    <span class="icon">
+                        <ion-icon name="mail-unread"></ion-icon>
+                    </span>
+                    <input type="signupEmail" id="signupEmail" required placeholder="Email">
+                </div>
+
+                <div class="inputBox">
+                    <span class="icon">
+                        <ion-icon name="lock-open"></ion-icon>
+                    </span>
+                    <input type="signupPassword" id="signupPassword" required placeholder="Password">
+                </div>
+                <div class="checkBox">
+                    <input type="checkbox" id="tearms">
+                    <label for="tearms">I agree to the terms and Conditions</label>
+                </div>
+                <div class="formloginBtn">
+                    <button class="btn">SignUp</button>
+
+                    <p>Already have an account? <span class="loginBtnBottom"><a href="#">Login</a></span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Linking JavaScript -->
+    <script src="/JS/main.js"></script>
+
+    <!-- Linking Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
